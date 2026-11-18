@@ -1,0 +1,63 @@
+You are an expert in Digital Image Processing and OpenCV. I need you to help me complete the following university experiment completely and correctly.
+
+### Experiment Title:
+Experiment 2: Image Enhancement
+
+### Experiment Objectives:
+1. Further familiarize with OpenCV-based image processing functions.
+2. Master various image enhancement methods.
+
+### Experiment Content:
+
+**Part 1 – night.png (denoted as FirstI):**
+1. Statistically compute and display the R, G, B channel histograms and the luminance histogram of FirstI.
+2. Perform linear and nonlinear transformations on FirstI to enhance brightness.
+3. Perform histogram equalization on FirstI.
+4. Complete the items listed in the experiment requirements.
+
+**Part 2 – peppers.jpg (denoted as SecI):**
+1. Add Gaussian noise to SecI to obtain NoiseI.
+2. Design a smoothing filter for NoiseI to suppress noise, obtaining SmoothI.
+3. Design a sharpening filter for SmoothI to enhance clarity.
+4. Complete the items listed in the experiment requirements.
+
+### Requirements for your response:
+
+Please provide a **complete, clean, and well-structured solution** with the following sections:
+
+1. **Complete Python Code**
+   - Write one single, well-organized Python script that completes the entire experiment.
+   - Use OpenCV + Matplotlib + NumPy.
+   - The code should automatically save all important results into a folder named `results`.
+   - Use good practices:
+     - For histogram equalization, equalize only the Y channel (YCrCb) to avoid color distortion.
+     - Also include CLAHE as an improved method.
+     - For sharpening, provide both Unsharp Masking and Laplacian methods.
+   - Add clear comments in the code.
+   - Make the visualization clean (side-by-side comparison figures).
+
+2. **Step-by-step Explanation**
+   - Explain what each major part of the code does.
+   - Explain the meaning of important parameters (alpha, beta, gamma, sigma, etc.).
+
+3. **How to Run the Code**
+   - Give clear instructions on how to set up the environment and run the script.
+
+4. **Expected Results Analysis**
+   - Briefly describe what good results should look like for each task (histograms, linear vs gamma, equalization, noise → smooth → sharp).
+
+5. **Difficulties & Solutions**
+   - List common problems students face in this experiment and how to solve them (in table format if possible).
+
+6. **Report Writing Tips**
+   - Tell me what I should write in the “Experiment Steps and Results” section.
+   - Suggest a good explanation for the layout method I chose.
+   - Suggest good content for the “Difficulties encountered” part.
+
+### Additional Notes:
+- The images I have are: `night.png` and `peppers.jpg`.
+- Please make the code robust (handle file not found errors).
+- Prefer clean and modern coding style.
+- Do not split the code into many small files. One complete script is better.
+
+Now generate the full solution.

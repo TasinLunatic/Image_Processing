@@ -1,0 +1,48 @@
+Experiment 2: Image Enhancement
+Results folder: D:\Code\IP\Exp-2\results
+[OK] Loaded night.png: 322x243, dtype=uint8
+[OK] Loaded peppers.JPG: 256x256, dtype=uint8
+
+============================================================
+PART 1 - night.png (FirstI): brightness enhancement
+============================================================
+--- FirstI (original) (322x243) ---
+  B: mean=  27.61  std=  26.16  min=  3  max=255  median=   20.0
+  G: mean=  25.70  std=  24.86  min=  2  max=254  median=   20.0
+  R: mean=  28.87  std=  20.95  min=  7  max=253  median=   25.0
+  Luminance: mean=  26.84  std=  23.67  min=  4  max=250
+[OK] Figure saved: results/fig1_histograms.png
+
+Linear transform  (alpha=2.2, beta=25): mean 27.4 -> 82.5
+Gamma transform   (gamma=2.2):            mean 27.4 -> 87.5
+[OK] Figure saved: results/fig2_brightness.png
+
+Histogram equalization (Y channel): mean 27.4 -> 132.0
+CLAHE (clip=3.0, 8x8 tiles):        mean 27.4 -> 50.3
+[OK] Figure saved: results/fig3_equalization.png
+
+============================================================
+PART 2 - peppers.jpg (SecI): noise -> smoothing -> sharpening
+============================================================
+--- SecI (original) (256x256) ---
+  B: mean=  64.78  std=  44.58  min=  0  max=255  median=   62.0
+  G: mean= 113.05  std=  72.58  min=  0  max=255  median=  123.0
+  R: mean= 144.29  std=  45.98  min=  0  max=255  median=  149.0
+  Luminance: mean= 116.88  std=  53.73  min=  1  max=254
+
+Gaussian noise added (sigma=25):  PSNR(SecI, NoiseI) = 20.48 dB
+PSNR(SecI,       Noisy) =  20.48 dB
+PSNR(SecI,    Mean 5x5) =  23.69 dB
+PSNR(SecI, Gaussian 5x5) =  25.08 dB
+PSNR(SecI,  Median 5x5) =  25.99 dB
+[OK] Figure saved: results/fig4_smoothing.png
+
+Sharpness metric (variance of Laplacian):
+            SecI:    1751.0
+          NoiseI:    6788.9
+         SmoothI:      63.7
+   Unsharp k=1.5:     218.8
+       Laplacian:     330.2
+[OK] Figure saved: results/fig5_sharpening.png
+
+All statistics above are also written to results/stats_summary.txt
