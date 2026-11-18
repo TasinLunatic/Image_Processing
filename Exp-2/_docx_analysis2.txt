@@ -1,0 +1,30 @@
+=== IMAGE POSITIONS (paragraph index -> rid, size EMU) ===
+  para[25] rid=rId5 size=?x? EMU
+  para[36] rid=rId6 size=?x? EMU
+  para[130] rid=rId7 size=?x? EMU
+  para[200] rid=rId8 size=?x? EMU
+  para[261] rid=rId9 size=?x? EMU
+  para[324] rid=rId10 size=?x? EMU
+  para[380] rid=rId11 size=?x? EMU
+  para[441] rid=rId12 size=?x? EMU
+
+=== TABLE STYLES ===
+  table 0: style=Normal Table
+    has tblBorders: True
+  table 1: style=Normal Table
+    has tblBorders: True
+  table 2: style=Normal Table
+    has tblBorders: True
+  table 3: style=Normal Table
+    has tblBorders: True
+
+=== HEADERS / FOOTERS ===
+section 0: header_linked=True, footer_linked=True
+section 1: header_linked=True, footer_linked=True
+
+=== STYLE DEFINITIONS (key ones) ===
+  Normal: font=None, size=10.5, bold=None
+    rFonts: ascii=None eastAsia=None hAnsi=None
+  Heading 1: font=None, size=22.0, bold=True
+  ds-markdown-paragraph: font=SimSun, size=12.0, bold=None
+    rFonts: ascii=SimSun eastAsia=SimSun hAnsi=SimSun
